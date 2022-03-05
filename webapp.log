@@ -1,0 +1,742 @@
+2022/03/03 11:49:24 main.go:15: test
+2022/03/03 12:48:24 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/03/03 13:40:19 users.go:66: near "in": syntax error
+2022/03/03 15:54:40 todos.go:96: near "where": syntax error
+2022/03/03 19:58:29 server.go:3160: http: panic serving [::1]:51366: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000115740})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc00018a0e0}, {0x445fd00, 0x453d440}, {0xc000139a18, 0x2, 0xc00018a120})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc00018a0e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc00018a0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc00018a0e0}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115620}, {0x4547178, 0xc00018a0e0}, 0xc000182100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131360, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 19:58:30 server.go:3160: http: panic serving [::1]:51367: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000078180})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc00020a000}, {0x445fd00, 0x453d440}, {0xc000057a18, 0x2, 0xc00020a040})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc00020a000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc00020a000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc00020a000}, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000078090}, {0x4547178, 0xc00020a000}, 0xc00007e000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007a000, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 19:58:34 server.go:3160: http: panic serving [::1]:51415: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000092180})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc0000ca000}, {0x445fd00, 0x453d440}, {0xc0000a6a18, 0x2, 0xc0000ca040})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc0000ca000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc0000ca000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc0000ca000}, 0xc0000b4000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000092090}, {0x4547178, 0xc0000ca000}, 0xc0000b4000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000096000, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 19:58:40 server.go:3160: http: panic serving [::1]:51416: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000092270})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc0000ca0e0}, {0x445fd00, 0x453d440}, {0xc000052a18, 0x2, 0xc0000ca120})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc0000ca0e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc0000ca0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc0000ca0e0}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000115800}, {0x4547178, 0xc0000ca0e0}, 0xc000182200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000131400, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 19:59:10 server.go:3160: http: panic serving [::1]:51419: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000078300})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc00020a0e0}, {0x445fd00, 0x453d440}, {0xc000057a18, 0x2, 0xc00020a120})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc00020a0e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc00020a0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc00020a0e0}, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000078240}, {0x4547178, 0xc00020a0e0}, 0xc00007e100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007a0a0, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 20:00:10 server.go:3160: http: panic serving [::1]:51425: open app/views/templates/&s.html%!(EXTRA string=layout): no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x44811c0, 0xc000115980})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547178, 0xc00018a1c0}, {0x445fd00, 0x453d440}, {0xc000053a18, 0x2, 0xc00018a200})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547178, 0xc00018a1c0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x76
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547178, 0xc00018a1c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547178, 0xc00018a1c0}, 0xc000182300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001158c0}, {0x4547178, 0xc00018a1c0}, 0xc000182300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001314a0, {0x4548a40, 0xc000115530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:47:00 server.go:3160: http: panic serving [::1]:52421: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481040, 0xc000200000})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0001120e0}, {0x445fb80, 0x453d300}, {0xc0000bfa08, 0x3, 0x424daa5})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547058, 0xc0001120e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x9b
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0001120e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0001120e0}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b620}, {0x4547058, 0xc0001120e0}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b7360, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:47:01 server.go:3160: http: panic serving [::1]:52422: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481040, 0xc00009bef0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0001121c0}, {0x445fb80, 0x453d300}, {0xc000052a08, 0x3, 0x424daa5})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547058, 0xc0001121c0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x9b
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0001121c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0001121c0}, 0xc00010a200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009ba70}, {0x4547058, 0xc0001121c0}, 0xc00010a200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b7400, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:47:06 server.go:3160: http: panic serving [::1]:52423: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481040, 0xc000078570})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00019a000}, {0x445fb80, 0x453d300}, {0xc000057a08, 0x3, 0x424daa5})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547058, 0xc00019a000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x9b
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00019a000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00019a000}, 0xc00018e000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000781b0}, {0x4547058, 0xc00019a000}, 0xc00018e000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00018a000, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:47:25 server.go:3160: http: panic serving [::1]:52425: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481040, 0xc000200660})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000258000}, {0x445fb80, 0x453d300}, {0xc000246a08, 0x3, 0x424daa5})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.top({0x4547058, 0xc000258000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_main.go:9 +0x9b
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000258000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000258000}, 0xc00024a000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002001b0}, {0x4547058, 0xc000258000}, 0xc00024a000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000240000, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:51 server.go:3160: http: panic serving [::1]:52430: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000301680})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0000b62a0}, {0x0, 0x0}, {0xc000113a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0000b62a0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0000b62a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0000b62a0}, 0xc0000a6400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000096090}, {0x4547058, 0xc0000b62a0}, 0xc0000a6400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00009a000, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:51 server.go:3160: http: panic serving [::1]:52431: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc0002064e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0002041c0}, {0x0, 0x0}, {0xc000119a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0002041c0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0002041c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0002041c0}, 0xc00021e100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000180630}, {0x4547058, 0xc0002041c0}, 0xc00021e100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000111540, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:51 server.go:3160: http: panic serving [::1]:52429: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000180ba0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00015c460}, {0x0, 0x0}, {0xc000179a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00015c460}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00015c460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00015c460}, 0xc000154400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000101620}, {0x4547058, 0xc00015c460}, 0xc000154400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000111360, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:51 server.go:3160: http: panic serving [::1]:52458: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000181050})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00015c540}, {0x0, 0x0}, {0xc000053a08, 0x3, 0x4016025})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00015c540}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x4, {0x4547058, 0xc00015c540}, 0x48b6108)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00015c540}, 0xc0000a6500)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301740}, {0x4547058, 0xc00015c540}, 0xc0000a6500)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00009a1e0, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:52 server.go:3160: http: panic serving [::1]:52459: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000206a20})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0002042a0}, {0x0, 0x0}, {0xc00026ea08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0002042a0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0002042a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0002042a0}, 0xc00021e200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002065a0}, {0x4547058, 0xc0002042a0}, 0xc00021e200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000268000, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:48:55 server.go:3160: http: panic serving [::1]:52461: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000206ed0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000204380}, {0x0, 0x0}, {0xc000053a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000204380}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000204380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000204380}, 0xc000154800)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181170}, {0x4547058, 0xc000204380}, 0xc000154800)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0001115e0, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:00 server.go:3160: http: panic serving [::1]:52463: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc0001812f0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0000b6380}, {0x0, 0x0}, {0xc000054a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0000b6380}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0000b6380}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0000b6380}, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301800}, {0x4547058, 0xc0000b6380}, 0xc0000a6600)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00009a280, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:01 server.go:3160: http: panic serving [::1]:52464: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000301bc0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000204460}, {0x0, 0x0}, {0xc000053a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000204460}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000204460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000204460}, 0xc00021e400)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000206ff0}, {0x4547058, 0xc000204460}, 0xc00021e400)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002680a0, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:05 server.go:3160: http: panic serving [::1]:52466: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000207830})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000204540}, {0x0, 0x0}, {0xc000053a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000204540}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000204540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000204540}, 0xc00021e600)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002073b0}, {0x4547058, 0xc000204540}, 0xc00021e600)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000268140, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:06 server.go:3160: http: panic serving [::1]:52467: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000350030})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0000b6460}, {0x0, 0x0}, {0xc000054a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0000b6460}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0000b6460}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0000b6460}, 0xc0000a6900)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000301c80}, {0x4547058, 0xc0000b6460}, 0xc0000a6900)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00009a320, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:07 server.go:3160: http: panic serving [::1]:52468: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000350090})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00015c620}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00015c620}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00015c620}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00015c620}, 0xc000154900)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001814a0}, {0x4547058, 0xc00015c620}, 0xc000154900)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000111680, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:12 server.go:3160: http: panic serving [::1]:52469: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000350630})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0000b6540}, {0x0, 0x0}, {0xc000054a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0000b6540}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0000b6540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0000b6540}, 0xc0000a6a00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003501b0}, {0x4547058, 0xc0000b6540}, 0xc0000a6a00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00009a3c0, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:49:42 server.go:3160: http: panic serving [::1]:52472: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000181dd0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00015c700}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00015c700}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00015c700}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00015c700}, 0xc000154b00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000181950}, {0x4547058, 0xc00015c700}, 0xc000154b00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc000111720, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:50:42 server.go:3160: http: panic serving [::1]:52478: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 48 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000207e60})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000204620}, {0x0, 0x0}, {0xc000053a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000204620}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000204620}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000204620}, 0xc00021e700)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002079e0}, {0x4547058, 0xc000204620}, 0xc00021e700)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0002681e0, {0x4548920, 0xc000101530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:37 server.go:3160: http: panic serving [::1]:52559: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00009bb00})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0001120e0}, {0x0, 0x0}, {0xc0000bfa08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0001120e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0001120e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0001120e0}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009b620}, {0x4547058, 0xc0001120e0}, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b7400, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:39 server.go:3160: http: panic serving [::1]:52560: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc000200150})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00018a000}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00018a000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00018a000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00018a000}, 0xc000180000)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007a090}, {0x4547058, 0xc00018a000}, 0xc000180000)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007c000, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:42 server.go:3160: http: panic serving [::1]:52561: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc0002001e0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0001121c0}, {0x0, 0x0}, {0xc000052a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0001121c0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0001121c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0001121c0}, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009bbc0}, {0x4547058, 0xc0001121c0}, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc0000b74a0, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:43 server.go:3160: http: panic serving [::1]:52562: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00007a5d0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000258000}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000258000}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000258000}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000258000}, 0xc000180200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007a480}, {0x4547058, 0xc000258000}, 0xc000180200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007c0a0, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:43 server.go:3160: http: panic serving [::1]:52563: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00014c090})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00018a0e0}, {0x0, 0x0}, {0xc000058a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00018a0e0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00018a0e0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00018a0e0}, 0xc000180300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007a690}, {0x4547058, 0xc00018a0e0}, 0xc000180300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007c140, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:52 server.go:3160: http: panic serving [::1]:52564: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00007ba10})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc00018a540}, {0x0, 0x0}, {0xc00012fa08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc00018a540}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc00018a540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc00018a540}, 0xc000180d00)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000200600}, {0x4547058, 0xc00018a540}, 0xc000180d00)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00026a000, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:52 server.go:3160: http: panic serving [::1]:52565: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00014d830})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc000112540}, {0x0, 0x0}, {0xc000058a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc000112540}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc000112540}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc000112540}, 0xc000180700)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007ac60}, {0x4547058, 0xc000112540}, 0xc000180700)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00007c1e0, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:52 server.go:3160: http: panic serving [::1]:52566: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00007bad0})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0002581c0}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0002581c0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0002581c0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0002581c0}, 0xc00026c200)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002014d0}, {0x4547058, 0xc0002581c0}, 0xc00026c200)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00026a1e0, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/03 21:53:53 server.go:3160: http: panic serving [::1]:52567: open app/views/templates/pulic_navbar.html: no such file or directory
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1802 +0xb9
+panic({0x4481020, 0xc00014d920})
+	/usr/local/go/src/runtime/panic.go:1047 +0x266
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML({0x4547058, 0xc0002582a0}, {0x0, 0x0}, {0xc000057a08, 0x3, 0x424da85})
+	/Users/fujikun/go/src/todo_app/app/controllers/server.go:16 +0xf9
+todo_app/app/controllers.signup({0x4547058, 0xc0002582a0}, 0x0)
+	/Users/fujikun/go/src/todo_app/app/controllers/route_auth.go:6 +0x91
+net/http.HandlerFunc.ServeHTTP(0x0, {0x4547058, 0xc0002582a0}, 0x0)
+	/usr/local/go/src/net/http/server.go:2047 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0, {0x4547058, 0xc0002582a0}, 0xc00026c300)
+	/usr/local/go/src/net/http/server.go:2425 +0x149
+net/http.serverHandler.ServeHTTP({0xc000201950}, {0x4547058, 0xc0002582a0}, 0xc00026c300)
+	/usr/local/go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00026a280, {0x4548920, 0xc00009b530})
+	/usr/local/go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3034 +0x4e8
+2022/03/05 12:59:10 route_main.go:25: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:06:48 route_main.go:53: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:06:48 route_main.go:25: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:07:16 route_main.go:53: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:07:16 route_main.go:25: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:43:25 route_main.go:26: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:43:29 route_main.go:72: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:43:55 route_main.go:93: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 13:43:55 route_main.go:26: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 14:44:06 route_main.go:26: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 14:44:18 route_main.go:111: sql: expected 4 destination arguments in Scan, not 5
+2022/03/05 14:44:18 route_main.go:26: sql: expected 4 destination arguments in Scan, not 5
